@@ -1,11 +1,13 @@
 
 # Recurrent Neural Network Models for Error Correction
 
+### Models
+
 This repository provides the source code of various models that have been described in [my master's thesis](http://sinaahmadi.github.io/files/[SinaAhmadi]Masters_thesis.pdf). This project aims at implementing and evaluating neural network models, in particular, Recurrent Neural Network (RNN), Bidirectional Recurrent Neural Network (BRNN), Sequence-to-Sequence (seq-to-seq) models and finally, attention-based mechanism in Sequence-to-Sequence models. The following figure illustrates an encoder-decoder model predicting the corrected form of the given incorrect phrase. 
 
 ![An encoder-decoder model for error correction](imgs/encoder_decoder.png "Recurrent Neural Network" )
 
-### Models
+### DyNet library
 
 In the implementation of the current project we have been using DyNet. The *Dynamic Neural Network Toolkit*, or DyNet, is a neural network library suited to networks that have dynamic structures.  DyNet supports both static and dynamic declaration strategies used in neural networks computations.  In the dynamic declaration, each network is built by using a directed and acyclic computation graph that is composed of expressions and parameters that define the model. Working efficiently on CPU or GPU, DyNet has powered a number of NLP research papers and projects recently. You may find more information about DyNet [here](http://dynet.readthedocs.io/en/latest/index.html#). 
 
