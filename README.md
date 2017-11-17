@@ -20,11 +20,11 @@ Assuming the task of grammatical and spelling error correction as a monolingual 
 For the experiments of my thesis, I used [a dedicated cluster](http://lipn.univ-paris13.fr/rcln/wiki/index.php/Cluster_TAL) at the host laboratory which was enough efficient to train the models with. In any case, it would be a good idea to work on the **optimization** of the introduced models in the current project, such as a) using hierarchical softmax [1] instead of the simple softmax, b) replacing stochastic gradient descent (`dynet.SimpleSGDTrainer()`) by Adam for stochastic optimization [2], c) modifying the initialization values and d) adapting hyperparameters.
 
 ### Some (more) details
-  * In order to visualize the behavior of the model during the training process, at the end of each complete execution, an HTML file, including the hyper-parameters of the models, details of the data set and the cross-entropy results, is created and saved in the `html_output` folder. To have your desired information, you may need to apply some modifications in the `Utility` class.
-  * Parameters of the models are saved in the `models` folder. This is done in `model.save()`.
+  * At the end of each complete execution, an HTML file including the hyper-parameters of the models, details of the data set and the cross-entropy results, is created and saved in the `html_output` folder. To have your desired information saved, you may need to apply some modifications in the `Utility` class.
+  * Parameters of the models are saved in the `models` folder. This is done by `model.save()`.
   * The loss value over the validation set in each epoch is illustrated and saved as a plot in the `plot` folder.
   * The output of each model for a given test set is saved in a text file in the `system_output` folder. 
-  * An RNN-MLP model is also provided which may be used for word-level models. This model is not included in the thesis. 
+  * An RNN-MLP model is also provided which may be used for word-level models. This model is not discussed in the thesis. 
 
 ### Requirements
   * [DyNet](http://dynet.readthedocs.io/en/latest/).
@@ -39,7 +39,5 @@ All details regarding the discussed models are documented in [my master's thesis
 [2]: Kingma, D., & Ba, J. (2014). Adam: A method for stochastic optimization. arXiv preprint arXiv:1412.6980.
 
 
-
-
 ### Confidentiality 
-Regarding the confidentiality of the project, some parts of the codes may not have been provided in their entirety. 
+Some parts of the codes may not have been provided in their entirety due to the confidentiality of the project.
