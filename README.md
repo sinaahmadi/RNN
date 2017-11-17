@@ -1,8 +1,6 @@
 
 # Recurrent Neural Network Models for Error Correction
 
-### Models
-
 This repository provides the source code of various models that have been described in [my master's thesis](http://sinaahmadi.github.io/files/[SinaAhmadi]Masters_thesis.pdf). This project aims at implementing and evaluating neural network models, in particular, Recurrent Neural Network (RNN), Bidirectional Recurrent Neural Network (BRNN), Sequence-to-Sequence (seq-to-seq) models and finally, attention-based mechanism in Sequence-to-Sequence models. The following figure illustrates an encoder-decoder model predicting the corrected form of the given incorrect phrase. 
 
 ![An encoder-decoder model for error correction](imgs/encoder_decoder.png "Recurrent Neural Network" )
@@ -15,7 +13,7 @@ In the implementation of the current project we have been using DyNet. The *Dyna
 
 Our approach is language-independent. Specifically for our project, we have trained and evaluated the models using the [QALB corpus](http://nlp.qatar.cmu.edu/qalb/) which is an Arabic corpus annotated based on the annotation style of the CoNLL-2013 shared task. A pickled version of a part of the corpus is also provided. 
 
-### Training 
+### Training the models
 
 Assuming the task of grammatical and spelling error correction as a monolingual translation task, we train each model using a potentially incorrect phrase with its gold-standard correction as training instance. In the provided codes, the models can be trained in character-level or word-level. The `preprocessing` class may help you in extracting specific parts of the annotated corpus into trainable data sets as well. 
 
