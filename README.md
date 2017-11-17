@@ -11,13 +11,20 @@ In the implementation of the current project we have been using DyNet. The *Dyna
 
 ### Data set
 
-Our approach is language-independent. Specifically for our project, we have trained and evaluated the models using the [QALB corpus](http://nlp.qatar.cmu.edu/qalb/) which is an Arabic corpus annotated based on the annotation style of the CoNLL-2013 shared task. The provided results in the thesis are based on character-level models.
+Our approach is language-independent. Specifically for our project, we have trained and evaluated the models using the [QALB corpus](http://nlp.qatar.cmu.edu/qalb/) which is an Arabic corpus annotated based on the annotation style of the CoNLL-2013 shared task. A pickled version of a part of the corpus is also provided. 
 
 ### Training 
 
 Assuming the task of grammatical and spelling error correction as a monolingual translation task, we train each model using a potentially incorrect phrase with its gold-standard correction as training instance. In the provided codes, the models can be trained in character-level or word-level. The `preprocessing` class may help you in extracting specific parts of the annotated corpus into trainable data sets as well. 
 
-For the experiments of my thesis, I used [a dedicated cluster](http://lipn.univ-paris13.fr/rcln/wiki/index.php/Cluster_TAL) at the host laboratory which was enough efficient to train the models with. In any case, it would be a good idea to add more optimized methods to the current project, such as using hierarchical softmax [1] instead of the simple softmax and Adam for stochastic optimization [2] instead of SDG.
+For the experiments of my thesis, I used [a dedicated cluster](http://lipn.univ-paris13.fr/rcln/wiki/index.php/Cluster_TAL) at the host laboratory which was enough efficient to train the models with. In any case, it would be a good idea to add more optimized methods to the current project, such as using hierarchical softmax [1] instead of the simple softmax and Adam for stochastic optimization [2] instead of stochastic gradient descent.
+
+### Some (more) details
+  * In order to visualize the behavior of the model during the training process, at the end of each complete execution, an HTML file, including the hyper-parameters of the models, details of the data set and the cross-entropy results, is created and saved in the `html_output` folder. To have your desired information, you may need to apply some modifications in the `Utility` class.
+  * Parameters of the models are saved in the `models` folder. This is done in `model.save()`.
+  * The loss value over the validation set in each epoch is illustrated and saved as a plot in the `plot` folder.
+  * The output of each model for a given test set is saved in a text file in the `system_output` folder. 
+  * An RNN-MLP model is also provided which may be used for word-level models. This model is not included in the thesis. 
 
 ### Requirements
   * [DyNet](http://dynet.readthedocs.io/en/latest/).
