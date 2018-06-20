@@ -32,7 +32,7 @@ For the experiments of my thesis, I used [a dedicated cluster](http://lipn.univ-
 
 
 ### Reference
-All details regarding the discussed models are documented in [my master's thesis](http://sinaahmadi.github.io/files/[SinaAhmadi]Masters_thesis.pdf).
+All details regarding the discussed models are documented in [my master's thesis](http://sinaahmadi.github.io/docs/[SinaAhmadi]Masters_thesis.pdf).
 
 [1]: Morin, F., & Bengio, Y. (2005, January). Hierarchical Probabilistic Neural Network Language Model. In Aistats (Vol. 5, pp. 246-252).
 
