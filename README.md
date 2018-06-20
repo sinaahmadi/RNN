@@ -1,7 +1,7 @@
 
 # Recurrent Neural Network Models for Error Correction
 
-This repository provides the source code of various models that have been described in [my master's thesis](http://sinaahmadi.github.io/docs/[Sina Ahmadi]Masters_thesis.pdf). This project aims at implementing and evaluating neural network models, in particular, Recurrent Neural Network (RNN), Bidirectional Recurrent Neural Network (BRNN), Sequence-to-Sequence (seq-to-seq) models and finally, attention-based mechanism in Sequence-to-Sequence models. The following figure illustrates an encoder-decoder model predicting the corrected form of the given incorrect phrase. 
+This repository provides the source code of various models that have been described in [my master's thesis](http://sinaahmadi.github.io/docs/[SinaAhmadi]Masters_thesis.pdf). This project aims at implementing and evaluating neural network models, in particular, Recurrent Neural Network (RNN), Bidirectional Recurrent Neural Network (BRNN), Sequence-to-Sequence (seq-to-seq) models and finally, attention-based mechanism in Sequence-to-Sequence models. The following figure illustrates an encoder-decoder model predicting the corrected form of the given incorrect phrase. 
 
 ![An encoder-decoder model for error correction](imgs/encoder_decoder.png "Recurrent Neural Network" )
 
@@ -32,7 +32,7 @@ For the experiments of my thesis, I used [a dedicated cluster](http://lipn.univ-
 
 
 ### Reference
-All details regarding the discussed models are documented in [my master's thesis](http://sinaahmadi.github.io/docs/[Sina Ahmadi]Masters_thesis.pdf).
+All details regarding the discussed models are documented in [my master's thesis](http://sinaahmadi.github.io/docs/[SinaAhmadi]Masters_thesis.pdf).
 
 [1]: Morin, F., & Bengio, Y. (2005, January). Hierarchical Probabilistic Neural Network Language Model. In Aistats (Vol. 5, pp. 246-252).
 
